@@ -29,7 +29,7 @@ class Solution:
             return 2
         for i in range(2, number + 1):
             self.time.append(self.time[i - 1] + self.time[i - 2])
-        return self.time[number]
+        return self.time[number - 1]
 
 
 s = Solution()
